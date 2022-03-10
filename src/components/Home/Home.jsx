@@ -25,7 +25,7 @@ const Home = () => {
     <div className="home">
       <Header showBackground={show}/>
       <Hero
-        title="Poésie futur Orient"
+        title="Poésie Futur-Orient"
         text="Château Perché 2022"
         showScrollDown={show}
       />

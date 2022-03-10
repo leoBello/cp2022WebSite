@@ -17,8 +17,8 @@ const Hero = (props) => {
        
         <div className="scroll-down ">
         {!props.showScrollDown && <>
-          <span class="chevron bottom chevron-1"></span>
-          <span class="chevron bottom chevron-2"></span></>}
+          <span className="chevron bottom chevron-1"></span>
+          <span className="chevron bottom chevron-2"></span></>}
         </div>
     </>
   );
