@@ -1,0 +1,49 @@
+svg {
+  width: 20vw;
+  height: auto;
+  path {
+    fill: white;
+  }
+}
+
+#fanion,
+#rempart,
+#tour,
+#gauche,
+#left,
+#right,
+#base {
+  transform: translateY(-1000vw);
+  opacity: 0;
+}
+
+#base {
+  transition: all 1.5s cubic-bezier(0,.99,1,.99);
+}
+
+#left,
+#right {
+  transition: all 1.5s cubic-bezier(0,.99,1,.99) 0.3s;
+}
+#tour {
+  transition: all 1.5s cubic-bezier(0,.99,1,.99) 0.6s;
+}
+#rempart {
+  transition: all 1.5s cubic-bezier(0,.99,1,.99) 0.9s;
+}
+#fanion {
+  transition: all 1.5s cubic-bezier(0,.99,1,.99) 1.2s;
+}
+
+.home:hover {
+  #fanion,
+  #rempart,
+  #tour,
+  #gauche,
+  #left,
+  #right,
+  #base {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
