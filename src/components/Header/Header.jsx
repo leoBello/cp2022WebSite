@@ -29,7 +29,7 @@ const NavLink = (props) => {
 };
 
 const Header = (props) => {
-  const navLinks = ["Billeterie" ,"Bénévolat", "FAQ", "Contact"];
+  const navLinks = ["Billetterie" ,"Bénévolat", "FAQ", "Contact"];
 
   const socials = [
     {
@@ -77,11 +77,11 @@ const Header = (props) => {
 const SocialIcon = (props) => {
   return (
     <a href={props.href} target="_blank" rel="noreferrer">
-      <span>
+     
         <img className="social-logo" src={props.src} alt={props.alt} />
-      </span>
+     
     </a>
   );
 };
 
-export { Header, NavLink };
+export { Header, NavLink, SocialIcon };

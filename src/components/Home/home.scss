@@ -1,10 +1,51 @@
 .home {
   scroll-behavior: smooth;
-  font-family: "Lato", sans-serif;
 }
 
 .infos-section {
   background: linear-gradient(to bottom, #ff4bf4, #16acc7);
-  height: 400vh;
   overflow: hidden;
+}
+
+// .precepte-container:nth-child(even) {
+//   transform: translateX(5%);
+// }
+
+// .precepte-container:nth-child(odd) {
+//   transform: translateX(-5%);
+// }
+
+
+.button {
+  pointer-events: auto;
+  cursor: pointer;
+  border: 1px solid #fff;
+  padding: 1rem 2em;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  // mix-blend-mode: screen;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  font-size: 1em;
+  border-radius: 0.3em;
+  overflow: hidden;
+  background: transparent;
+  color: #fff;
+  &:hover {
+    background: border-box no-repeat url("../../assets/button-background.png");
+  }
+  
+  
+
+}
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 1rem;
+  &.benevoles {
+    column-gap: 2rem;
+  }
 }
