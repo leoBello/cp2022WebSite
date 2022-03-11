@@ -1,7 +1,9 @@
-import React from "react";
+import  { useState } from 'react';
 import logoInsta from "../../assets/instagram-64.png";
 import lofoFb from "../../assets/facebook-64.png";
 import "./header.scss";
+
+
 
 
 
@@ -20,6 +22,12 @@ const NavLink = (props) => {
 const Header = (props) => {
   const navLinks = ["Billetterie" ,"Bénévolat", "FAQ", "Contact"];
 
+  const [en, setEn] = useState(false);
+
+  const handleLanguage = () => {
+    setEn(!en);
+  };
+  
   const socials = [
     {
       href: "https://www.instagram.com/chateauperchefestival/?hl=fr",
@@ -50,6 +58,7 @@ const Header = (props) => {
           ))}
         </ul>
         <div className="social-icons-container">
+          <button className={`lang-button ${en ? 'fr': 'en'}`} onClick={handleLanguage}></button>
           {socials.map((social) => (
             <SocialIcon
               href={social.href}

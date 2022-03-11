@@ -15,7 +15,6 @@
 //   transform: translateX(-5%);
 // }
 
-
 .button {
   pointer-events: auto;
   cursor: pointer;
@@ -36,10 +35,8 @@
   &:hover {
     background: border-box no-repeat url("../../assets/button-background.png");
   }
-  
-  
-
 }
+
 .buttons-container {
   display: flex;
   justify-content: center;
@@ -47,5 +44,58 @@
   gap: 1rem;
   &.benevoles {
     column-gap: 2rem;
+  }
+}
+.banner-container {
+  display: flex;
+  justify-content: center;
+  .banner {
+    position: relative;
+    background: border-box no-repeat url("../../assets/banner2.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 10rem;
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Engagement", cursive;
+    font-size: 7em;
+    // p {
+    //   background: linear-gradient(to bottom, #ff4bf4, #16acc7);
+    //   background-clip: text;
+    //   -webkit-background-clip: text;
+    //   -webkit-text-fill-color: transparent;
+    // }
+  }
+}
+
+.button2 {
+  pointer-events: auto;
+  cursor: pointer;
+  border: 1px solid #fff;
+  width: 40vw;
+  height: 40vh;
+  padding: 1rem 2em;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  // mix-blend-mode: screen;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  font-size: 1em;
+  border-radius: 0.3em;
+  overflow: hidden;
+  background: border-box no-repeat url("../../assets/banner2.jpg");
+  background-size: cover;
+  background-position: center center;
+
+  color: #fff;
+  &:hover {
+    background: border-box no-repeat url("../../assets/banner.png");
+    background-size: cover;
+    background-position: center center;
   }
 }

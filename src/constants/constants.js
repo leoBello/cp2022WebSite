@@ -20,5 +20,27 @@ export const PreceptesData = [
         precepte: "Costume",
         description: "Poésie Future-Orient…Prends ton temps et laisse ces mots résonner en toi… Surpasse-toi, invente, imagine, crée. Tes costumes sont une extension de toi et seront l’ingrédient secret qui fera que tout sera encore plus magique. Pense aussi à ton totem, que va-t-il évoquer, pourquoi va-t-on le reconnaître et vouloir le suivre ?",
       }
+  ],
+  [
+    {
+      precepte: "No judgement",
+      description: "Don't judge people, let go of any form of judgement, free yourself and others. We cultivate differences and we embrace them!",
+    },
+    {
+        precepte: "Leave no trace",
+        description: `We deeply encourage everyone to "bring their own cup" to avoid single use plastic. We will offer you biodegradable soap and deploy a waste management brigade to guide you through this eco-responsable process. Think twice before packing your snacks ;) The festival will strictly be vegetarian! Shuttles will be available from at least 5 french cities, it's safer and cleaner!`,
+      },
+      {
+        precepte: "Consent / Safe place",
+        description: `Respect your limits and others consent in any situation. We developed a "Safe Place" that allows you to let go, where aggressions are absolutely banned, where consent is respected, and where caring for each other is the norm. All of this in a warm, comfortable and secure space.`,
+      },
+      {
+        precepte: "Best humain",
+        description: "Be your best Human Being! Be Kind, respect yourself, respect others, respect Art and creativity, respect the process of letting go, respect the land, observe and listen, inhale the best...exhale the rest!",
+      },
+      {
+        precepte: "Costume",
+        description: "Poésie Future-Orient…take your time and let these words resonate with you… Challenge yourself, invent, imagine, create. Your costumes are an extension of who you are and will be the secret ingredient which will make everything even more magical. Oh, and don’t forget your totem, what will it evoke? Why will we recognise it and want to follow it?",
+      }
   ]
 ];

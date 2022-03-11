@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Header } from "../Header/Header";
-import { Section, SectionPrecepte } from "../Section/Section";
+import { Section, SectionPrecepte, SectionText } from "../Section/Section";
 import { Hero } from "../Hero/Hero";
 import { PreceptesData } from "../../constants/constants";
 import { Footer } from "../Footer/Footer";
@@ -47,10 +47,19 @@ const Home = () => {
             <button className="button">Billetterie</button>
           </div>
         </Section>
+        <Section title="Infos Navettes" center>
+          <SectionText text="Patiente, nous nous occupons de tout..." />
+        </Section>
         <Section title="Bénévolat" center>
           <div className="buttons-container benevoles">
             <button className="button">Bénévoles</button>
             <button className="button">Managers</button>
+          </div>
+        </Section>
+       
+        <Section title="Event" center>
+          <div className="buttons-container billetterie">
+            <button className="button2">See facebook event</button>
           </div>
         </Section>
         <Footer />

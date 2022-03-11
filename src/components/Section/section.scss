@@ -34,22 +34,21 @@
     @media screen and (max-width: "500px") {
       font-size: 3em;
     }
-    
-      
   }
+}
 
-  .section-text {
-    font-size: 1.5em;
-    margin-bottom: 1rem;
-    background: linear-gradient(
-      121.57deg,
-      #ffffff 18.77%,
-      rgba(255, 255, 255, 0.66) 60.15%
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+.section-text {
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+  background: linear-gradient(
+    121.57deg,
+    #ffffff 18.77%,
+    rgba(255, 255, 255, 0.66) 60.15%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 
 .precepte-container {
@@ -57,7 +56,7 @@
   @media screen and (max-width: "800px") {
     margin: 2em 0;
   }
-    
+
   .precepte-title {
     font-size: 1.7em;
     font-weight: bold;
@@ -76,4 +75,3 @@
     }
   }
 }
-

@@ -136,3 +136,32 @@
       transform: scale(1.2);
     }
 }
+
+.lang-button {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  
+  
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+  border-radius: 10%;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.en {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/640px-Flag_of_the_United_Kingdom.svg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.fr {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1024px-Flag_of_France.svg.png');
+  background-position: center;
+  background-size: cover;
+}
