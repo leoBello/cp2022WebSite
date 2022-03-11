@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-copyright">
-        <p>© 2022, Château Perché, réalisé par <a href="https://www.malt.fr/profile/leobello?overview=true" target="_blank" ><span className="signature">Léo Bello</span></a></p>
+        <p>© 2022, Château Perché, réalisé par <a href="https://www.malt.fr/profile/leobello?overview=true" target="_blank" rel="noreferrer"><span className="signature">Léo Bello</span></a></p>
       </div>
     </footer>
   );
