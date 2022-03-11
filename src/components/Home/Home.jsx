@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import { CastleSvg } from "../Castle/Castle";
 import { Header } from "../Header/Header";
-import { Section, SectionText, SectionPrecepte } from "../Section/Section";
+import { Section, SectionPrecepte } from "../Section/Section";
 import { Hero } from "../Hero/Hero";
 import { PreceptesData } from "../../constants/constants";
 import { Footer } from "../Footer/Footer";

@@ -3,18 +3,7 @@ import logoInsta from "../../assets/instagram-64.png";
 import lofoFb from "../../assets/facebook-64.png";
 import "./header.scss";
 
-const SocialIcons = (props) => {
-  return (
-    <a
-      className="social-icons"
-      href={props.href}
-      target="_blank"
-      rel="noreferrer"
-    >
-      {props.children}
-    </a>
-  );
-};
+
 
 const NavLink = (props) => {
   return (
