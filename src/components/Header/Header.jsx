@@ -1,11 +1,7 @@
-import  { useState } from 'react';
+import { useState } from "react";
 import logoInsta from "../../assets/instagram-64.png";
 import lofoFb from "../../assets/facebook-64.png";
 import "./header.scss";
-
-
-
-
 
 const NavLink = (props) => {
   return (
@@ -20,14 +16,14 @@ const NavLink = (props) => {
 };
 
 const Header = (props) => {
-  const navLinks = ["Billetterie" ,"Bénévolat", "FAQ", "Contact"];
+  const navLinks = ["Billetterie", "Infos navettes", "Bénévolat", "FAQ"];
 
   const [en, setEn] = useState(false);
 
   const handleLanguage = () => {
     setEn(!en);
   };
-  
+
   const socials = [
     {
       href: "https://www.instagram.com/chateauperchefestival/?hl=fr",
@@ -39,10 +35,12 @@ const Header = (props) => {
     },
   ];
 
-  
-
   return (
-    <div className={`header-container ${props.showBackground ? 'nav-black' : 'nav-transparent'}`}>
+    <div
+      className={`header-container ${
+        props.showBackground ? "nav-black" : "nav-transparent"
+      }`}
+    >
       <header className="header">
         <img
           className="logo-cp rotating"
@@ -58,13 +56,12 @@ const Header = (props) => {
           ))}
         </ul>
         <div className="social-icons-container">
-          <button className={`lang-button ${en ? 'fr': 'en'}`} onClick={handleLanguage}></button>
+          <button
+            className={`lang-button ${en ? "fr" : "en"}`}
+            onClick={handleLanguage}
+          ></button>
           {socials.map((social) => (
-            <SocialIcon
-              href={social.href}
-              key={social.src}
-              src={social.src}
-            />
+            <SocialIcon href={social.href} key={social.src} src={social.src} />
           ))}
         </div>
       </header>
@@ -75,9 +72,7 @@ const Header = (props) => {
 const SocialIcon = (props) => {
   return (
     <a href={props.href} target="_blank" rel="noreferrer">
-     
-        <img className="social-logo" src={props.src} alt={props.alt} />
-     
+      <img className="social-logo" src={props.src} alt={props.alt} />
     </a>
   );
 };

@@ -44,23 +44,64 @@ const Home = () => {
         </Section>
         <Section title="Billetterie" center>
           <div className="buttons-container billetterie">
-            <button className="button">Billetterie</button>
+            <button
+              className="button"
+              onClick={(e) => {
+                e.preventDefault();
+                window.open(
+                  "https://lachasseaubilletduchateau.herokuapp.com/?fbclid=IwAR3jvZpZ8IVe8ewjOQuerM4OPAcDtfgRawX4fGM5qGEDvRbYam6gq4gcgw8",
+                  "_blank"
+                );
+              }}
+            >
+              Billetterie
+            </button>
           </div>
         </Section>
         <Section title="Infos Navettes" center>
           <SectionText text="Patiente, nous nous occupons de tout..." />
         </Section>
-        <Section title="Bénévolat" center>
+        <Section title="Formulaire de Bénévolat" center>
           <div className="buttons-container benevoles">
-            <button className="button">Bénévoles</button>
-            <button className="button">Managers</button>
+            <button
+              className="button"
+              onClick={(e) => {
+                e.preventDefault();
+                window.open("http://google.com", "_blank");
+              }}
+            >
+              Bénévoles
+            </button>
+            <button
+              className="button"
+              onClick={(e) => {
+                e.preventDefault();
+                window.open("http://google.com", "_blank");
+              }}
+            >
+              Managers de bénévoles
+            </button>
           </div>
         </Section>
-       
+
         <Section title="Event" center>
           <div className="buttons-container billetterie">
-            <button className="button2">See facebook event</button>
+            <button
+              className="button2"
+              onClick={(e) => {
+                e.preventDefault();
+                window.open(
+                  "https://www.facebook.com/events/314086130597146",
+                  "_blank"
+                );
+              }}
+            >
+              See facebook event
+            </button>
           </div>
+        </Section>
+        <Section title="FAQ" center>
+          <SectionText text="Patiente, nous nous occupons de tout..." />
         </Section>
         <Footer />
       </section>
