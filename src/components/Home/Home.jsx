@@ -42,7 +42,7 @@ const Home = () => {
       <Header showBackground={show} />
       <Hero
         title="Poésie Futur-Orient"
-        text="Château Perché 2022"
+        text="Château Perché Festival 2022"
         showScrollDown={show}
       />
       <section className="infos-section">
