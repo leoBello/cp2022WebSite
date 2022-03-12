@@ -73,15 +73,15 @@ export const HeaderData = {
   ],
   en : [
     {
-      title: "Billetterie",
+      title: "Ticketing",
       url: "#ticketing",
     },
     {
-      title: "Infos navettes",
+      title: "Shuttles",
       url: "#shuttles",
     },
     {
-      title: "Bénévolat",
+      title: "Volunteers",
       url: "#volunteer"
     },
     {
