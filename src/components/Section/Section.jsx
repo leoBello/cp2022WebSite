@@ -6,12 +6,12 @@ const SectionTitle = (props) => {
 
 const Section = (props) => {
   return (
-    <div className="section-container">
+    <section className="section-container" id={props.id}>
       <div className="section-text-container">
       <SectionTitle title={props.title} center={props.center}/>
       {props.children}
       </div>
-    </div>
+    </section>
   );
 };
 
