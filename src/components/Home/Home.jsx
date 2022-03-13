@@ -5,7 +5,6 @@ import { Hero } from "../Hero/Hero";
 import { PreceptesData, TitleSectionData } from "../../constants/constants";
 import { Footer } from "../Footer/Footer";
 import { LanguageContext } from "./LanguageContext";
-import { CastleSvg } from "../Castle/Castle";
 import { Cloud } from "../Cloud/Cloud";
 
 import "./home.scss";
