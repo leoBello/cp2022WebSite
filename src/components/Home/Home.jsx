@@ -6,6 +6,7 @@ import { PreceptesData, TitleSectionData } from "../../constants/constants";
 import { Footer } from "../Footer/Footer";
 import { LanguageContext } from "./LanguageContext";
 import { Cloud } from "../Cloud/Cloud";
+import LaputaPng from "../../assets/laputa.png";
 
 import "./home.scss";
 
@@ -61,9 +62,8 @@ const Home = () => {
                   <div className="left">
                     {/* <CastleSvg /> */}
                   </div>
-
-                  <Cloud className="left" />
                   <Cloud className="right" />
+                  <Cloud className="left" />
                   <Cloud className="left" />
                   <Cloud className="right" />
                   <div className="preceptes-container">
@@ -110,6 +110,8 @@ const Home = () => {
                   title={TitleSectionData[language][3].title}
                   center
                 >
+                  <Cloud className="left" src={LaputaPng} />
+                  <Cloud className="left" />
                   <Cloud className="left" />
                   <div className="buttons-container benevoles">
                     <button

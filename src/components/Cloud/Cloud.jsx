@@ -7,7 +7,7 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
-const Cloud = ({className}) => {
+const Cloud = (props) => {
 
 
   const mooveCloud = (cloud, top, left) => {
@@ -31,7 +31,7 @@ const Cloud = ({className}) => {
     };
   }, []);
 
-  return <img className={`cloud ${className}`} src={CloudPng} alt="cloud"></img>;
+  return <img className={`cloud ${props.className}`} src={props.src ? props.src : CloudPng} alt="cloud"></img>;
 };
 
 export { Cloud };
