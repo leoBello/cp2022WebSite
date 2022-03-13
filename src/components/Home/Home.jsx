@@ -53,7 +53,7 @@ const Home = () => {
           {({ language }) => {
             const waitingText =
               language === "fr"
-                ? "Patiente, nous nous occupons de tout..."
+                ? "Patience chaton, ça arrive..."
                 : "Please wait, we are working on it...";
             return (
               <>

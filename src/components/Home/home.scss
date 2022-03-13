@@ -103,20 +103,20 @@
 }
 
 .cloud {
-  width: 200px;
+  width: 250px;
   height: auto;
   @media screen and (max-width: "900px") {
-    width: 150px;
+    width: 200px;
     height: auto;
 
   }
   @media screen and (max-width: "750px") {
-    width: 100px;
+    width: 150px;
     height: auto;
 
   }
   @media screen and (max-width: "600px") {
-    width: 75px;
+    width: 100px;
     height: auto;
   }
 }
