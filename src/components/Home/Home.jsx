@@ -7,9 +7,11 @@ import { Footer } from "../Footer/Footer";
 import { LanguageContext } from "./LanguageContext";
 import { Cloud } from "../Cloud/Cloud";
 import LaputaPng from "../../assets/laputa.png";
+import Cloud2 from "../../assets/cloud2.png";
+import Cloud3 from "../../assets/cloud3.png";
+import Cloud5 from "../../assets/cloud5.png";
 
 import "./home.scss";
-
 
 const Home = () => {
   const [show, handleShow] = useState(false);
@@ -59,13 +61,11 @@ const Home = () => {
                   id="preceptes"
                   title={TitleSectionData[language][0].title}
                 >
-                  <div className="left">
-                    {/* <CastleSvg /> */}
-                  </div>
+                  <div className="left">{/* <CastleSvg /> */}</div>
                   <Cloud className="right" />
-                  <Cloud className="left" />
-                  <Cloud className="left" />
-                  <Cloud className="right" />
+                  <Cloud className="left" src={Cloud3} />
+                  <Cloud className="left" src={Cloud2} />
+                  <Cloud className="right" src={Cloud5} />
                   <div className="preceptes-container">
                     {PreceptesData[language].map((precepte, index) => (
                       <SectionPrecepte
@@ -81,8 +81,8 @@ const Home = () => {
                   title={TitleSectionData[language][1].title}
                   center
                 >
-                  <Cloud className="left" />
-                  <Cloud className="right" />
+                  <Cloud className="left" src={Cloud5} />
+                  <Cloud className="right" src={Cloud3} />
                   <div className="buttons-container billetterie">
                     <button
                       className="button"
@@ -104,7 +104,7 @@ const Home = () => {
                   center
                 >
                   <SectionText text={waitingText} />
-                  <Cloud className="right" />
+                  <Cloud className="right" src={Cloud3} />
                   <Cloud className="left" />
                 </Section>
                 <Section
@@ -114,8 +114,9 @@ const Home = () => {
                 >
                   <Cloud className="left" src={LaputaPng} />
                   <Cloud className="left" />
-                  <Cloud className="left" />
-                  <Cloud className="right" />
+                  <Cloud className="left" src={Cloud3} />
+                  <Cloud className="right" src={Cloud2} />
+                  <Cloud className="left" src={Cloud5} />
                   <div className="buttons-container benevoles">
                     <button
                       className="button"
@@ -141,9 +142,8 @@ const Home = () => {
                 </Section>
 
                 <Section title={TitleSectionData[language][4].title} center>
-                <Cloud className="right" />
-                <Cloud className="left" />
-                
+                  <Cloud className="right" src={Cloud3} />
+                  <Cloud className="left" />
 
                   <div className="buttons-container billetterie">
                     <button
@@ -165,7 +165,7 @@ const Home = () => {
                   title={TitleSectionData[language][5].title}
                   center
                 >
-                  <Cloud className="left" />
+                  <Cloud className="left" src={Cloud5}/>
                   <Cloud className="right" />
                   <SectionText text={waitingText} />
                 </Section>
