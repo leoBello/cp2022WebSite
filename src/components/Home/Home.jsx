@@ -7,9 +7,9 @@ import { Footer } from "../Footer/Footer";
 import { LanguageContext } from "./LanguageContext";
 import { Cloud } from "../Cloud/Cloud";
 import LaputaPng from "../../assets/laputa.png";
-import Cloud2 from "../../assets/cloud2.png";
-import Cloud3 from "../../assets/cloud3.png";
-import Cloud5 from "../../assets/cloud5.png";
+import Cloud2 from "../../assets/resized/cloud2.png";
+import Cloud3 from "../../assets/resized/cloud3.png";
+import Cloud5 from "../../assets/resized/cloud5.png";
 
 import "./home.scss";
 

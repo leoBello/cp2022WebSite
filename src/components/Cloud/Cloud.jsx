@@ -8,20 +8,17 @@ function getRandomInt(max) {
 }
 
 const Cloud = (props) => {
-
-
   const mooveCloud = (cloud, top, left) => {
     // nouvelle position
     cloud.style.top = `${top}%`;
     cloud.style.left = `${left}%`;
     // nouvelle taille
-    cloud.style.transform = `scale(${Math.random(1)+0.5})`;
-
+    cloud.style.transform = `scale(${Math.random(1) + 0.5})`;
   };
-  
+
   useEffect(() => {
     const clouds = document.querySelectorAll(".cloud");
-    let timer = setInterval(function () {
+    let timer = window.setInterval(function () {
       clouds.forEach((cloud, index) => {
         mooveCloud(cloud, getRandomInt(100), getRandomInt(100));
       });
@@ -31,7 +28,13 @@ const Cloud = (props) => {
     };
   }, []);
 
-  return <img className={`cloud ${props.className}`} src={props.src ? props.src : CloudPng} alt="cloud"></img>;
+  return (
+    <img
+      className={`cloud ${props.className}`}
+      src={props.src ? props.src : CloudPng}
+      alt="cloud"
+    ></img>
+  );
 };
 
 export { Cloud };
