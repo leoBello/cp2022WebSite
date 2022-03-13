@@ -1,6 +1,24 @@
-
 .cloud {
-    position: absolute;
-    transition: all 10s linear;
-    z-index: 1;
+  width: 250px;
+  height: auto;
+  position: absolute;
+  transition: all 10s linear;
+  z-index: 3;
+
+  @media screen and (max-width: "900px") {
+    width: 200px;
+    height: auto;
+  }
+  @media screen and (max-width: "750px") {
+    width: 175px;
+    height: auto;
+  }
+  @media screen and (max-width: "600px") {
+    width: 125px;
+    height: auto;
+  }
+}
+
+.moon {
+  z-index: 2;
 }

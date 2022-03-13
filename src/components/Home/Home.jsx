@@ -10,6 +10,7 @@ import LaputaPng from "../../assets/laputa.png";
 import Cloud2 from "../../assets/resized/cloud2.png";
 import Cloud3 from "../../assets/resized/cloud3.png";
 import Cloud5 from "../../assets/resized/cloud5.png";
+import Moon from "../../assets/resized/moon.png";
 
 import "./home.scss";
 
@@ -64,6 +65,8 @@ const Home = () => {
                   <div className="left">{/* <CastleSvg /> */}</div>
                   <Cloud className="right" />
                   <Cloud className="left" src={Cloud3} />
+                  <Cloud className="right" src={Cloud3} />
+                  <Cloud className="right moon" src={Moon} />
                   <Cloud className="left" src={Cloud2} />
                   <Cloud className="right" src={Cloud5} />
                   <div className="preceptes-container">

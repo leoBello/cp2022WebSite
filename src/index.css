@@ -13,5 +13,23 @@ html {
   padding: 0;
   font-family: "Lato", sans-serif;
   color: white;
+
   /* cursor: url("../src/assets/cursor2.png"), auto; */
+}
+body {
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+}
+
+/* Avoid Chrome to see Safari hack */
+@supports (-webkit-touch-callout: none) {
+  body {
+    /* The hack for Safari */
+    height: -webkit-fill-available;
+  }
+}
+
+html {
+  height: -webkit-fill-available;
 }
