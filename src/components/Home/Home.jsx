@@ -82,6 +82,7 @@ const Home = () => {
                   center
                 >
                   <Cloud className="left" />
+                  <Cloud className="right" />
                   <div className="buttons-container billetterie">
                     <button
                       className="button"
@@ -104,6 +105,7 @@ const Home = () => {
                 >
                   <SectionText text={waitingText} />
                   <Cloud className="right" />
+                  <Cloud className="left" />
                 </Section>
                 <Section
                   id="volunteer"
@@ -113,6 +115,7 @@ const Home = () => {
                   <Cloud className="left" src={LaputaPng} />
                   <Cloud className="left" />
                   <Cloud className="left" />
+                  <Cloud className="right" />
                   <div className="buttons-container benevoles">
                     <button
                       className="button"
@@ -139,6 +142,9 @@ const Home = () => {
 
                 <Section title={TitleSectionData[language][4].title} center>
                 <Cloud className="right" />
+                <Cloud className="left" />
+                
+
                   <div className="buttons-container billetterie">
                     <button
                       className="button2"
@@ -160,6 +166,7 @@ const Home = () => {
                   center
                 >
                   <Cloud className="left" />
+                  <Cloud className="right" />
                   <SectionText text={waitingText} />
                 </Section>
                 <Footer />
