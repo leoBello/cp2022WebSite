@@ -3,6 +3,7 @@
   overflow: auto;
 }
 
+
 .infos-section {
   background: linear-gradient(to bottom, #ff4bf4, #16acc7);
   overflow: hidden;
@@ -98,5 +99,24 @@
     background: border-box no-repeat url("../../assets/banner.png");
     background-size: cover;
     background-position: center center;
+  }
+}
+
+.cloud {
+  width: 200px;
+  height: auto;
+  @media screen and (max-width: "900px") {
+    width: 150px;
+    height: auto;
+
+  }
+  @media screen and (max-width: "750px") {
+    width: 100px;
+    height: auto;
+
+  }
+  @media screen and (max-width: "600px") {
+    width: 75px;
+    height: auto;
   }
 }

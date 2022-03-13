@@ -21,6 +21,18 @@
   flex-direction: column;
   align-items: center;
 }
+.left {
+  grid-area: 1/1/1/2;
+  position: absolute;
+  left: 10%;
+}
+
+.right {
+  grid-area: 1/3/1/4;
+  position: absolute;
+  left: 10%;
+}
+
 
 .section-text-container {
   width: 100%;

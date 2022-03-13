@@ -5,7 +5,10 @@
   overflow:hidden;
   width: 100%;
   height: 100vh;
-  min-height: 386px;
+  min-height: 386px !important;
+
+
+  
     
   object-fit: cover;
   background-position: center;

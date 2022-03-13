@@ -1,6 +1,8 @@
 import "./footer.scss";
 import logoInsta from "../../assets/instagram-64.png";
 import lofoFb from "../../assets/facebook-64.png";
+import lofoSoundCloud from "../../assets/soundcloud.png";
+
 
 import { SocialIcon } from "../Header/Header";
 
@@ -14,6 +16,11 @@ const Footer = () => {
       href: "https://www.facebook.com/chateauperchefestival/",
       src: lofoFb,
     },
+    {
+      href: "https://soundcloud.com/perchepolis-label",
+      src: lofoSoundCloud,
+    },
+
   ];
   return (
     <footer className="footer">
