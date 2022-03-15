@@ -95,6 +95,7 @@ const Home = () => {
                   <div className="left">{/* <CastleSvg /> */}</div>
                   <Cloud className="right" />
                   <Cloud className="left" src={Cloud3} />
+                  <Cloud className="left" />
                   <Cloud className="right" src={Cloud3} />
                   <Cloud className="right moon" src={Moon} />
                   <Cloud className="left" src={Cloud2} />
@@ -179,6 +180,8 @@ const Home = () => {
                   inView={inEventView}
                 >
                   <InView onChange={setInEventView}>
+                    <Cloud className="right" src={Cloud3} />
+                    <Cloud className="left" src={Cloud5} />
                     <Cloud className="right" src={Cloud3} />
                     <Cloud className="left" />
                     <div className="event-container">
