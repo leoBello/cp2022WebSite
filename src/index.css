@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Alagard";
-  src: local("Alagard"), url("./fonts/Alagard.ttf") format("truetype");
+  font-family: "Engagement";
+  src: local("Engagement"), url("./fonts/Berkshire_Swash,Engagement,Lato,Sansita_Swashed/Engagement/Engagement-Regular.ttf") format("truetype");
 }
 * {
   margin: 0 0;

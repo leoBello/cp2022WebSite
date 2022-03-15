@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import './fonts/Alagard.ttf';
+import './fonts/Berkshire_Swash,Engagement,Lato,Sansita_Swashed/Engagement/Engagement-Regular.ttf'; 
+
+
 
 ReactDOM.render(
   <React.StrictMode>
