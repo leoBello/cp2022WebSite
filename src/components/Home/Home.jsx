@@ -14,6 +14,18 @@ import Moon from "../../assets/resized/moon.png";
 
 import "./home.scss";
 
+const mooveCloud = (cloud) => {
+  // nouvelle position
+  cloud.style.top = `${getRandomInt(100)}%`;
+  cloud.style.left = `${getRandomInt(100)}%`;
+  // nouvelle taille
+  cloud.style.transform = `scale(${Math.random(1) + 0.5})`;
+};
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
 const Home = () => {
   const [show, handleShow] = useState(false);
 
@@ -38,6 +50,22 @@ const Home = () => {
     window.addEventListener("scroll", transitionNavBar);
     return () => {
       window.removeEventListener("sroll", transitionNavBar);
+    };
+  }, []);
+
+  // moove clouds
+  useEffect(() => {
+    const clouds = document.querySelectorAll(".cloud");
+    clouds.forEach((cloud) => {
+      mooveCloud(cloud);
+    });
+    let timer = window.setInterval(function () {
+      clouds.forEach((cloud) => {
+        mooveCloud(cloud);
+      });
+    }, 10000);
+    return () => {
+      clearInterval(timer);
     };
   }, []);
 
@@ -168,7 +196,7 @@ const Home = () => {
                   title={TitleSectionData[language][5].title}
                   center
                 >
-                  <Cloud className="left" src={Cloud5}/>
+                  <Cloud className="left" src={Cloud5} />
                   <Cloud className="right" />
                   <SectionText text={waitingText} />
                 </Section>
