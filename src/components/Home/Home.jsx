@@ -151,12 +151,13 @@ const Home = () => {
                   <Cloud className="left" src={Cloud3} />
                   <Cloud className="right" src={Cloud2} />
                   <Cloud className="left" src={Cloud5} />
-                  <div className="buttons-container benevoles">
+                  <div className="buttons-container many">
                     <button
                       className="button"
+                      
                       onClick={(e) => {
                         e.preventDefault();
-                        window.open("http://google.com", "_blank");
+                        window.open("https://form.typeform.com/to/Je3qICtC?typeform-source=l.facebook.com", "_blank");
                       }}
                     >
                       {language === "fr" ? "Bénévoles" : "Volunteers"}
@@ -165,7 +166,7 @@ const Home = () => {
                       className="button"
                       onClick={(e) => {
                         e.preventDefault();
-                        window.open("http://google.com", "_blank");
+                        window.open("https://form.typeform.com/to/wGNVZHHI?typeform-source=l.facebook.com", "_blank");
                       }}
                     >
                       {language === "fr"

@@ -42,9 +42,11 @@
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  gap: 1rem;
-  &.benevoles {
-    column-gap: 2rem;
+  &.many {
+    .button {
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+    }
   }
 }
 
