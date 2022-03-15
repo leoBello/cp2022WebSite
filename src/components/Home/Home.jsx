@@ -6,6 +6,7 @@ import { PreceptesData, TitleSectionData } from "../../constants/constants";
 import { Footer } from "../Footer/Footer";
 import { LanguageContext } from "./LanguageContext";
 import { Cloud } from "../Cloud/Cloud";
+import { InView } from "react-intersection-observer";
 import LaputaPng from "../../assets/laputa.png";
 import Cloud2 from "../../assets/resized/cloud2.png";
 import Cloud3 from "../../assets/resized/cloud3.png";
@@ -28,6 +29,7 @@ function getRandomInt(max) {
 
 const Home = () => {
   const [show, handleShow] = useState(false);
+  const [inEventView, setInEventView] = React.useState(false);
 
   const transitionNavBar = () => {
     if (window.scrollY > 0) {
@@ -171,25 +173,29 @@ const Home = () => {
                     </button>
                   </div>
                 </Section>
-
-                <Section title={TitleSectionData[language][4].title} center>
-                  <Cloud className="right" src={Cloud3} />
-                  <Cloud className="left" />
-
-                  <div className="buttons-container billetterie">
-                    <button
-                      className="button2"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.open(
-                          "https://www.facebook.com/events/314086130597146",
-                          "_blank"
-                        );
-                      }}
-                    >
-                      See facebook event
-                    </button>
-                  </div>
+                <Section
+                  title={TitleSectionData[language][4].title}
+                  center
+                  inView={inEventView}
+                >
+                  <InView onChange={setInEventView}>
+                    <Cloud className="right" src={Cloud3} />
+                    <Cloud className="left" />
+                    <div className="event-container">
+                      <button
+                        className={`button2 ${inEventView ? "animate" : ""}`}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          window.open(
+                            "https://www.facebook.com/events/314086130597146",
+                            "_blank"
+                          );
+                        }}
+                      >
+                        See facebook event
+                      </button>
+                    </div>
+                  </InView>
                 </Section>
                 <Section
                   id="faq"
