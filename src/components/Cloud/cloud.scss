@@ -1,5 +1,9 @@
 .cloud {
   width: 250px;
+
+  &.porco {
+    width: 200px;
+  } 
   height: auto;
   position: absolute;
   transition: all 10s linear;
@@ -8,10 +12,18 @@
   @media screen and (max-width: "900px") {
     width: 200px;
     height: auto;
+    &.porco {
+      width: 150px;
+    } 
+
+    
   }
   @media screen and (max-width: "750px") {
     width: 175px;
     height: auto;
+    &.porco {
+      width: 100px;
+    } 
   }
   @media screen and (max-width: "600px") {
     width: 125px;
@@ -19,6 +31,7 @@
   }
 }
 
-.moon {
+.moon,
+.porco {
   z-index: 2;
 }

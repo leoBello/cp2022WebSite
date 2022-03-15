@@ -43,6 +43,7 @@
   // font-family: 'Ruthie', cursive;
   // font-family: 'Sansita Swashed', cursive;
   .section-title {
+    z-index: 1;
     font-size: 7em;
     font-weight: bold;
     margin: 0.5em 0;
@@ -81,6 +82,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
+  z-index: 1;
 }
 
 .precepte-container {

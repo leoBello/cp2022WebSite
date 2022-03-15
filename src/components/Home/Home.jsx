@@ -12,6 +12,8 @@ import Cloud2 from "../../assets/resized/cloud2.png";
 import Cloud3 from "../../assets/resized/cloud3.png";
 import Cloud5 from "../../assets/resized/cloud5.png";
 import Moon from "../../assets/resized/moon.png";
+import Porco from "../../assets/porco.png";
+import Island from "../../assets/island.png";
 
 import "./home.scss";
 
@@ -208,7 +210,9 @@ const Home = () => {
                 >
                   <Cloud className="left" src={Cloud5} />
                   <Cloud className="right" />
+                  <Cloud className="porco" src={Porco} />
                   <SectionText text={waitingText} />
+                  <img className="island left" src={Island} alt="island" />
                 </Section>
                 <Footer />
               </>
