@@ -18,6 +18,9 @@ const Cloud = (props) => {
 
   useEffect(() => {
     const clouds = document.querySelectorAll(".cloud");
+    clouds.forEach((cloud, index) => {
+      mooveCloud(cloud, getRandomInt(100), getRandomInt(100));
+    });
     let timer = window.setInterval(function () {
       clouds.forEach((cloud, index) => {
         mooveCloud(cloud, getRandomInt(100), getRandomInt(100));

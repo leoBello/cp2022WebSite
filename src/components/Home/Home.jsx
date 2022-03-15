@@ -97,7 +97,7 @@ const Home = () => {
                         );
                       }}
                     >
-                      {language === "fr" ? "Billeterie" : "Ticketing"}
+                      {language === "fr" ? "Billetterie" : "Ticketing"}
                     </button>
                   </div>
                 </Section>
