@@ -212,6 +212,15 @@ const Home = () => {
                   <Cloud className="right" />
                   <Cloud className="porco" src={Porco} />
                   <SectionText text={waitingText} />
+                  {/* <div className="faq-container">
+                    {FAQData[language].map((faq, index) => (
+                      <SectionFAQ
+                        key={index}
+                        question={faq.question}
+                        answer={faq.answer}
+                      />
+                    ))}
+                  </div> */}
                   <img className="island left" src={Island} alt="island" />
                 </Section>
                 <Footer />

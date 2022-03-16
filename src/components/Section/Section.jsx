@@ -39,5 +39,14 @@ const SectionPrecepte = (props) => {
   );
 };
 
+const  SectionFAQ = (props) => {
+  return (
+    <div className="question-container">
+      <h3 className="section-text">{props.question}</h3>
+      <p className="answer">{props.answer}</p>
+    </div>
+  );
+};
 
-export { Section, SectionText, SectionPrecepte };
+
+export { Section, SectionText, SectionPrecepte, SectionFAQ };

@@ -133,3 +133,18 @@ export const TitleSectionData = {
     },
   ],
 };
+
+export const FAQData = {
+  fr: [
+    {
+      question: "",
+      answer: ""
+    },
+  ],
+  en : [
+    {
+      question: "",
+      answer: ""
+    },
+  ]
+};

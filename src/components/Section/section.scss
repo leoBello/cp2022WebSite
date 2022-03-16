@@ -72,7 +72,7 @@
 
 .section-text {
   font-size: 1.5em;
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
   background: linear-gradient(
     121.57deg,
     #ffffff 18.77%,
@@ -83,6 +83,9 @@
   -webkit-text-fill-color: transparent;
   text-align: center;
   z-index: 1;
+  @media screen and (max-width: "500px") {
+    font-size: 1.2em;
+  }
 }
 
 .precepte-container {
@@ -108,4 +111,17 @@
       font-size: 1em;
     }
   }
+
+ 
+
 }
+
+.answer {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 1rem;
+  @media screen and (max-width: "600px") {
+    font-size: 1em;
+  }
+}
+
