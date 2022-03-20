@@ -39,14 +39,14 @@ const SectionPrecepte = (props) => {
   );
 };
 
-const  SectionFAQ = (props) => {
+const  SectionCostume = (props) => {
   return (
-    <div className="question-container">
-      <h3 className="section-text">{props.question}</h3>
-      <p className="answer">{props.answer}</p>
+    <div className="costume-container">
+      <h3 className="costume-day">{props.day}</h3>
+      <p className="costume-title">{props.title}</p>
     </div>
   );
 };
 
 
-export { Section, SectionText, SectionPrecepte, SectionFAQ };
+export { Section, SectionText, SectionPrecepte, SectionCostume };

@@ -1,5 +1,5 @@
 export const PreceptesData = {
-  fr : [
+  fr: [
     {
       precepte: "Pas de jugement",
       description:
@@ -25,7 +25,7 @@ export const PreceptesData = {
         "Poésie Future-Orient…Prends ton temps et laisse ces mots résonner en toi… Surpasse-toi, invente, imagine, crée. Tes costumes sont une extension de toi et seront l’ingrédient secret qui fera que tout sera encore plus magique. Pense aussi à ton totem, que va-t-il évoquer, pourquoi va-t-on le reconnaître et vouloir le suivre ?",
     },
   ],
-  en : [
+  en: [
     {
       precepte: "No judgement",
       description:
@@ -53,7 +53,7 @@ export const PreceptesData = {
 };
 
 export const HeaderData = {
-  fr : [ 
+  fr: [
     {
       title: "Billetterie",
       url: "#ticketing",
@@ -64,14 +64,14 @@ export const HeaderData = {
     },
     {
       title: "Bénévolat",
-      url: "#volunteer"
+      url: "#volunteer",
     },
     {
       title: "FAQ",
-      url: "#faq"
-    }
+      url: "#faq",
+    },
   ],
-  en : [
+  en: [
     {
       title: "Ticketing",
       url: "#ticketing",
@@ -82,13 +82,13 @@ export const HeaderData = {
     },
     {
       title: "Volunteers",
-      url: "#volunteer"
+      url: "#volunteer",
     },
     {
       title: "FAQ",
-      url: "#faq"
+      url: "#faq",
     },
-  ]
+  ],
 };
 
 export const TitleSectionData = {
@@ -111,6 +111,15 @@ export const TitleSectionData = {
     {
       title: "FAQ",
     },
+    {
+      title: "Précédentes éditions",
+    },
+    {
+      title: "Costume guidelines",
+    },
+    {
+      title: "Note d'intention artistique",
+    },
   ],
   en: [
     {
@@ -131,20 +140,93 @@ export const TitleSectionData = {
     {
       title: "FAQ",
     },
+    {
+      title: "Previous editions",
+    },
+    {
+      title: "Costume guidelines",
+    },
+    {
+      title: "Note of artistic intent"
+    }
   ],
 };
 
 export const FAQData = {
   fr: [
     {
-      question: "",
-      answer: ""
+      question: "Campings",
+      answer:
+        "Choisis ton camping sur la billetterie Shotgun (Jasmin ou Lotus) et télécharge impérativement l'appli shotgun pour le scan des billets à l'entrée du festival",
+    },
+    {
+      question: "Espace vans / campings cars / camions",
+      answer:
+        "U espace est prévu, il te suffit de prendre une place de parking sur la billetterie Shotgun et de télécharger l'appli shotgun pour le scan des billets à l'entrée",
+    },
+    {
+      question: "Navettes",
+      answer:
+        "Elles partiront de Paris, Nantes, Lyon, Bordeaux, Marseille et Moulins, les billets seront mis en vente sur Shotgun à partir du 01/05/22",
+    },
+    {
+      question: "Revente",
+      answer: "Tu peux revendre ton billet via l'application Shotgun",
+    },
+    {
+      question: "Moyen de paiement sur le festival",
+      answer: "CB only",
     },
   ],
-  en : [
+  en: [
     {
-      question: "",
-      answer: ""
+      question: "Campings",
+      answer:
+        "Choose your camping on the ticketing platform Shotgun (Jasmin or Lotus) and download the Shotgun App for the ticket scan at the entry of the festival",
     },
-  ]
+    {
+      question: "Vans / caravans:",
+      answer:
+        "A space will be dedicated, you just have to book your parking ticket on the ticketing platform Shotgun and download the Shotgun App for the ticket scan at the entry of the festival",
+    },
+    {
+      question: "Resell",
+      answer: "You can resell your ticket via the Shotgun App",
+    },
+    {
+      question: "Payment methods on the festival",
+      answer: "CB only",
+    },
+  ],
+};
+
+export const CostumeData = {
+  fr: [
+    {
+      day: "Jour 1",
+      title: "Maquillage ET Calligraphie ي 漢 हि",
+    },
+    {
+      day: "Jour 2",
+      title: "Louve des Steppes",
+    },
+    {
+      day: "Jour 3",
+      title: "Apocalypse à Beijing en 2125",
+    },
+  ],
+  en: [
+    {
+      day: "Day 1",
+      title: "Face Painting and Calligraphy ي 漢 हि",
+    },
+    {
+      day: "Day 2",
+      title: "Steppen Wolf",
+    },
+    {
+      day: "Day 3",
+      title: "Apocalypse in Beijing in 2125",
+    },
+  ],
 };

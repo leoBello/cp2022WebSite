@@ -33,7 +33,6 @@
   left: 10%;
 }
 
-
 .section-text-container {
   width: 100%;
 
@@ -111,17 +110,25 @@
       font-size: 1em;
     }
   }
-
- 
-
 }
 
-.answer {
-  font-family: 'Lato', sans-serif;
+.costume-container {
+  font-family: "Lato", sans-serif;
   font-size: 1.2em;
   margin-bottom: 1rem;
-  @media screen and (max-width: "600px") {
-    font-size: 1em;
-  }
-}
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 100%;
 
+  .costume-day {
+    grid-area: 1 /1 /1 /2;
+    text-align: right;
+    margin-right: 2rem;
+  }
+
+  .costume-title {
+    grid-area: 1 /2 /1 /3;
+    
+  }
+
+}

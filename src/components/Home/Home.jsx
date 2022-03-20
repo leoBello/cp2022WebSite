@@ -1,12 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { Header } from "../Header/Header";
-import { Section, SectionPrecepte, SectionText } from "../Section/Section";
+import {
+  Section,
+  SectionPrecepte,
+  SectionText,
+  SectionCostume,
+} from "../Section/Section";
 import { Hero } from "../Hero/Hero";
-import { PreceptesData, TitleSectionData } from "../../constants/constants";
+import {
+  PreceptesData,
+  TitleSectionData,
+  FAQData,
+  CostumeData,
+} from "../../constants/constants";
 import { Footer } from "../Footer/Footer";
 import { LanguageContext } from "./LanguageContext";
 import { Cloud } from "../Cloud/Cloud";
 import { InView } from "react-intersection-observer";
+import { Carousel } from "../Carousel/Carousel";
 import LaputaPng from "../../assets/laputa.png";
 import Cloud2 from "../../assets/resized/cloud2.png";
 import Cloud3 from "../../assets/resized/cloud3.png";
@@ -134,49 +145,33 @@ const Home = () => {
                     </button>
                   </div>
                 </Section>
-                <Section
-                  id="shuttles"
-                  title={TitleSectionData[language][2].title}
-                  center
-                >
-                  <SectionText text={waitingText} />
-                  <Cloud className="right" src={Cloud3} />
-                  <Cloud className="left" />
+                <Section title={TitleSectionData[language][6].title}>
+                  <Carousel />
                 </Section>
+
                 <Section
-                  id="volunteer"
-                  title={TitleSectionData[language][3].title}
+                  id="faq"
+                  title={TitleSectionData[language][5].title}
                   center
                 >
-                  <Cloud className="left" src={LaputaPng} />
-                  <Cloud className="left" />
-                  <Cloud className="left" src={Cloud3} />
-                  <Cloud className="right" src={Cloud2} />
                   <Cloud className="left" src={Cloud5} />
-                  <div className="buttons-container many">
-                    <button
-                      className="button"
-                      
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.open("https://form.typeform.com/to/Je3qICtC?typeform-source=l.facebook.com", "_blank");
-                      }}
-                    >
-                      {language === "fr" ? "Bénévoles" : "Volunteers"}
-                    </button>
-                    <button
-                      className="button"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.open("https://form.typeform.com/to/wGNVZHHI?typeform-source=l.facebook.com", "_blank");
-                      }}
-                    >
-                      {language === "fr"
-                        ? "Managers de bénévoles"
-                        : "Volunteer's Manager"}
-                    </button>
+                  <Cloud className="right" />
+                  <Cloud className="right" src={Cloud3} />
+                  <Cloud className="left" src={Cloud2} />
+                  <SectionText />
+                  <div className="faq-container">
+                    <div className="preceptes-container">
+                      {FAQData[language].map((faq, index) => (
+                        <SectionPrecepte
+                          key={index}
+                          title={faq.question}
+                          text={faq.answer}
+                        />
+                      ))}
+                    </div>
                   </div>
                 </Section>
+
                 <Section
                   title={TitleSectionData[language][4].title}
                   center
@@ -203,26 +198,97 @@ const Home = () => {
                     </div>
                   </InView>
                 </Section>
+
                 <Section
-                  id="faq"
-                  title={TitleSectionData[language][5].title}
+                  id="volunteer"
+                  title={TitleSectionData[language][3].title}
+                  center
+                >
+                  <Cloud className="left" src={LaputaPng} />
+                  <Cloud className="left" />
+                  <Cloud className="left" src={Cloud3} />
+                  <Cloud className="right" src={Cloud2} />
+                  <Cloud className="left" src={Cloud5} />
+                  <div className="buttons-container many">
+                    <button
+                      className="button"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        window.open(
+                          "https://form.typeform.com/to/Je3qICtC?typeform-source=l.facebook.com",
+                          "_blank"
+                        );
+                      }}
+                    >
+                      {language === "fr" ? "Bénévoles" : "Volunteers"}
+                    </button>
+                    <button
+                      className="button"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        window.open(
+                          "https://form.typeform.com/to/wGNVZHHI?typeform-source=l.facebook.com",
+                          "_blank"
+                        );
+                      }}
+                    >
+                      {language === "fr"
+                        ? "Managers de bénévoles"
+                        : "Volunteer's Manager"}
+                    </button>
+                  </div>
+                </Section>
+                <Section
+                  id="shuttles"
+                  title={TitleSectionData[language][2].title}
+                  center
+                >
+                  <SectionText text={waitingText} />
+                  <Cloud className="right" src={Cloud3} />
+                  <Cloud className="left" />
+                </Section>
+                <Section
+                  id="artisticIntent"
+                  title={TitleSectionData[language][8].title}
+                  center
+                >
+                   <button
+                      className="button"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        window.open(
+                          "https://form.typeform.com/to/wGNVZHHI?typeform-source=l.facebook.com",
+                          "_blank"
+                        );
+                      }}
+                    >{language === "en" ? "Note of artistic intent" : "Note d'intention artistique"}</button>
+                  
+                  <Cloud className="left" src={Cloud5} />
+                  <Cloud className="right" src={Cloud3} />
+                  <Cloud className="right" />
+                  <Cloud className="left" src={Cloud2} />
+                </Section>
+
+                <Section
+                  id="costume_guidelines"
+                  title={TitleSectionData[language][7].title}
                   center
                 >
                   <Cloud className="left" src={Cloud5} />
                   <Cloud className="right" />
                   <Cloud className="porco" src={Porco} />
-                  <SectionText text={waitingText} />
-                  {/* <div className="faq-container">
-                    {FAQData[language].map((faq, index) => (
-                      <SectionFAQ
-                        key={index}
-                        question={faq.question}
-                        answer={faq.answer}
-                      />
-                    ))}
-                  </div> */}
+
+                  {CostumeData[language].map((costume, index) => (
+                    <SectionCostume
+                      key={index}
+                      day={costume.day}
+                      title={costume.title}
+                    />
+                  ))}
+
                   <img className="island left" src={Island} alt="island" />
                 </Section>
+
                 <Footer />
               </>
             );
