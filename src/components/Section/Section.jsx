@@ -23,7 +23,7 @@ const Section = (props) => {
 };
 
 const SectionText = (props) => (
-    <p className="section-text">{props.text}</p>
+    <p className="section-text" {...props}>{props.text}</p>
 );
 
 const SectionPrecepte = (props) => {

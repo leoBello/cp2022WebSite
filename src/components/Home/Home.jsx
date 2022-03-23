@@ -25,6 +25,7 @@ import Cloud5 from "../../assets/resized/cloud5.png";
 import Moon from "../../assets/resized/moon.png";
 import Porco from "../../assets/porco.png";
 import Island from "../../assets/island.png";
+import Pdf from "../../assets/note_intention.pdf";
 
 import "./home.scss";
 
@@ -252,17 +253,21 @@ const Home = () => {
                   title={TitleSectionData[language][8].title}
                   center
                 >
-                   <button
-                      className="button"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.open(
-                          "https://form.typeform.com/to/wGNVZHHI?typeform-source=l.facebook.com",
-                          "_blank"
-                        );
-                      }}
-                    >{language === "en" ? "Note of artistic intent" : "Note d'intention artistique"}</button>
-                  
+                  <button
+                    className="button"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open(
+                        Pdf,
+                        "_blank"
+                      );
+                    }}
+                  >
+                    {language === "en"
+                      ? "Note of artistic intent"
+                      : "Note d'intention artistique"}
+                  </button>
+
                   <Cloud className="left" src={Cloud5} />
                   <Cloud className="right" src={Cloud3} />
                   <Cloud className="right" />
@@ -277,7 +282,14 @@ const Home = () => {
                   <Cloud className="left" src={Cloud5} />
                   <Cloud className="right" />
                   <Cloud className="porco" src={Porco} />
-
+                  <SectionText
+                    id="costume_warning"
+                    text={
+                      language === "fr"
+                        ? "Soyez clairs dans vos intentions, toujours bienveillants et soyez conscients que certains symboles peuvent affecter d'autres personnes."
+                        : "Be clear with your intentions, always kind and be conscious that certain symbols can offend other people. "
+                    }
+                  />
                   {CostumeData[language].map((costume, index) => (
                     <SectionCostume
                       key={index}
@@ -285,7 +297,6 @@ const Home = () => {
                       title={costume.title}
                     />
                   ))}
-
                   <img className="island left" src={Island} alt="island" />
                 </Section>
 

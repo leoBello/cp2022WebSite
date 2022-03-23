@@ -119,11 +119,11 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   width: 100%;
+  grid-gap: 2em;
 
   .costume-day {
     grid-area: 1 /1 /1 /2;
     text-align: right;
-    margin-right: 2rem;
   }
 
   .costume-title {
