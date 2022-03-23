@@ -22,6 +22,8 @@ import LaputaPng from "../../assets/laputa.png";
 import Cloud2 from "../../assets/resized/cloud2.png";
 import Cloud3 from "../../assets/resized/cloud3.png";
 import Cloud5 from "../../assets/resized/cloud5.png";
+import Planet from "../../assets/desertEarth.png";
+import Neptune from "../../assets/neptune.png";
 import Moon from "../../assets/resized/moon.png";
 import Porco from "../../assets/porco.png";
 import Island from "../../assets/island.png";
@@ -106,12 +108,13 @@ const Home = () => {
                   id="preceptes"
                   title={TitleSectionData[language][0].title}
                 >
-                  <div className="left">{/* <CastleSvg /> */}</div>
                   <Cloud className="right" />
                   <Cloud className="left" src={Cloud3} />
                   <Cloud className="left" />
+                  <Cloud className="left planete" src={Planet} />
                   <Cloud className="right" src={Cloud3} />
-                  <Cloud className="right moon" src={Moon} />
+                  <Cloud className="right planete" src={Neptune} />
+
                   <Cloud className="left" src={Cloud2} />
                   <Cloud className="right" src={Cloud5} />
                   <div className="preceptes-container">
@@ -146,7 +149,12 @@ const Home = () => {
                     </button>
                   </div>
                 </Section>
+
                 <Section title={TitleSectionData[language][6].title}>
+                  <Cloud className="left" src={Cloud2} />
+                  <Cloud className="left" src={Cloud3} />
+                  <Cloud className="right" />
+                  <Cloud className="right" src={Cloud5} />
                   <Carousel />
                 </Section>
 
@@ -156,9 +164,12 @@ const Home = () => {
                   center
                 >
                   <Cloud className="left" src={Cloud5} />
+                  <Cloud className="left" src={Cloud5} />
+                  <Cloud className="left" />
                   <Cloud className="right" />
                   <Cloud className="right" src={Cloud3} />
-                  <Cloud className="left" src={Cloud2} />
+                  <Cloud className="right" src={Cloud2} />
+                  <Cloud className="right moon" src={Moon} />
                   <SectionText />
                   <div className="faq-container">
                     <div className="preceptes-container">
@@ -257,10 +268,7 @@ const Home = () => {
                     className="button"
                     onClick={(e) => {
                       e.preventDefault();
-                      window.open(
-                        Pdf,
-                        "_blank"
-                      );
+                      window.open(Pdf, "_blank");
                     }}
                   >
                     {language === "en"
