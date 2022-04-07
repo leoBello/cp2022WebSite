@@ -121,14 +121,22 @@
   width: 100%;
   grid-gap: 2em;
 
+  .costume-day,
+  .costume-title {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
   .costume-day {
     grid-area: 1 /1 /1 /2;
-    text-align: right;
+    justify-content: end;
   }
 
   .costume-title {
     grid-area: 1 /2 /1 /3;
-    
+    justify-content: flex-start;
   }
 
 }
