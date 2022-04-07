@@ -68,8 +68,25 @@
     height: 0;
     visibility: hidden;
 
+    .event-text {
+      visibility: hidden;
+    }
+    
+    .animate-text {
+      animation: fadeInText 0.8s cubic-bezier(0, 0.75, 0.46, 1) forwards 0.7s;
+    }
+    @keyframes fadeInText {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
     &.animate {
-      animation: fadeIn 0.8s cubic-bezier(0, 0.75, 0.46, 1) forwards 0.5s;
+      animation: fadeIn 0.8s cubic-bezier(0, 0.75, 0.46, 1) forwards 0.3s;
     }
     @keyframes fadeIn {
       0% {
@@ -82,6 +99,7 @@
         visibility: visible;
       }
     }
+
     padding: 1rem 2em;
     margin: 0;
     font-family: inherit;
@@ -113,6 +131,9 @@
     }
   }
 }
+
+
+
 
 .cloud {
   width: 250px;
@@ -149,3 +170,4 @@
     display: none;
   }
 }
+

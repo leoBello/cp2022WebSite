@@ -205,7 +205,7 @@ const Home = () => {
                           );
                         }}
                       >
-                        See facebook event
+                        <span className={`event-text ${inEventView ? "animate-text" : ""}`}>See facebook event</span>
                       </button>
                     </div>
                   </InView>
