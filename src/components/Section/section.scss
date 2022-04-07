@@ -133,6 +133,11 @@
   width: 100%;
   grid-gap: 2em;
 
+  @media screen and (max-width: "600px") {
+    font-size: 1em;
+    
+  }
+
   .costume-day,
   .costume-title {
     height: 100%;

@@ -170,7 +170,7 @@ const Home = () => {
                   <Cloud className="right" src={Cloud3} />
                   <Cloud className="right" src={Cloud2} />
                   <Cloud className="right moon" src={Moon} />
-                  <SectionText />
+                
                   <div className="faq-container">
                     <div className="preceptes-container">
                       {FAQData[language].map((faq, index) => (
