@@ -150,7 +150,7 @@ const Home = () => {
                   </div>
                 </Section>
 
-                <Section title={TitleSectionData[language][6].title}>
+                <Section id="previous-editions" title={TitleSectionData[language][6].title}>
                   <Cloud className="left" src={Cloud2} />
                   <Cloud className="left" src={Cloud3} />
                   <Cloud className="right" />

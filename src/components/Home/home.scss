@@ -143,3 +143,9 @@
 #costume_warning {
   margin-bottom: 2em;
 }
+
+#previous-editions {
+  @media screen and (max-width: "750px") {
+    display: none;
+  }
+}
