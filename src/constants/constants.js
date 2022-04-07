@@ -162,7 +162,7 @@ export const FAQData = {
     {
       question: "Espace vans / campings cars / camions",
       answer:
-        "U espace est prévu, il te suffit de prendre une place de parking sur la billetterie Shotgun et de télécharger l'appli shotgun pour le scan des billets à l'entrée",
+        "Un espace est prévu, il te suffit de prendre une place de parking sur la billetterie Shotgun et de télécharger l'appli shotgun pour le scan des billets à l'entrée",
     },
     {
       question: "Navettes",
