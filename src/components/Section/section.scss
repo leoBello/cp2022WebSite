@@ -15,6 +15,13 @@
   }
 }
 
+.section-container:not(:first-child) {
+  margin-top: 4rem;
+  @media screen and (max-width: "830px") {
+    margin-top: 2rem;
+  }
+}
+
 .section-left,
 .section-right {
   display: flex;
@@ -45,7 +52,7 @@
     z-index: 1;
     font-size: 7em;
     font-weight: bold;
-    margin: 0.5em 0;
+    margin-bottom: 4rem;
     font-family: "Engagement", cursive;
     justify-self: center;
     grid-area: 1 / 2 / 1 / 3;
@@ -58,7 +65,7 @@
     }
     @media screen and (max-width: "830px") {
       font-size: 5em;
-      margin: 0.25em 0;
+      margin-bottom: 2rem;
     }
     @media screen and (max-width: "600px") {
       font-size: 4em;
@@ -92,11 +99,17 @@
   @media screen and (max-width: "800px") {
     margin: 2em 0;
   }
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   .precepte-title {
     font-size: 1.7em;
     font-weight: bold;
-    margin: 0.5em 0;
+    margin: 1em 0;
     font-family: "Sansita Swashed", cursive;
     @media screen and (max-width: "600px") {
       font-size: 1.5em;
@@ -105,7 +118,6 @@
 
   .precepte-text {
     font-size: 1.2em;
-    margin-bottom: 1rem;
     @media screen and (max-width: "600px") {
       font-size: 1em;
     }
