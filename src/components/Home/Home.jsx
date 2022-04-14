@@ -12,6 +12,7 @@ import {
   TitleSectionData,
   FAQData,
   CostumeData,
+  ShuttleData,
 } from "../../constants/constants";
 import { Footer } from "../Footer/Footer";
 import { LanguageContext } from "./LanguageContext";
@@ -113,7 +114,7 @@ const Home = () => {
                   <Cloud className="left" />
                   <Cloud className="left planete" src={Planet} />
                   <Cloud className="right" src={Cloud3} />
-                  <Cloud className="right planete" src={Neptune} />
+                  <Cloud className="right" src={Cloud3} />
 
                   <Cloud className="left" src={Cloud2} />
                   <Cloud className="right" src={Cloud5} />
@@ -149,14 +150,47 @@ const Home = () => {
                     </button>
                   </div>
                 </Section>
+                <Section
+                  id="shuttles"
+                  title={TitleSectionData[language][2].title}
+                  center
+                >
+                  <Cloud className="left" src={Cloud5} />
+                  <Cloud className="left" src={Cloud5} />
+                  <Cloud className="left" />
+                  <Cloud className="left" src={Cloud3}/>
+                  <Cloud className="right" />
+                  <Cloud className="right" src={Cloud3} />
+                  <Cloud className="right" src={Cloud2} />
+                  <Cloud className="right planete" src={Neptune} />
 
-                <Section id="previous-editions" title={TitleSectionData[language][6].title}>
+                  <div className="faq-container">
+                    <div className="preceptes-container">
+                      {ShuttleData[language].map((faq, index) => (
+                        <SectionPrecepte
+                          key={index}
+                          title={faq.question}
+                          text={faq.answer}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                </Section>
+                <Section
+                  id="previous-editions"
+                  title={TitleSectionData[language][6].title}
+                >
                   <Cloud className="left" src={Cloud2} />
                   <Cloud className="left" src={Cloud3} />
                   <Cloud className="right" />
                   <Cloud className="right" src={Cloud5} />
                   <Carousel />
-                  <span className="copyright-photo"><p>© Crédit photo : Valentin Duch, Romain Guédé, Kevin Soirat, Blanche Clément, Antoine Grenel</p></span>
+                  <span className="copyright-photo">
+                    <p>
+                      © Crédit photo : Valentin Duch, Romain Guédé, Kevin
+                      Soirat, Blanche Clément, Antoine Grenel
+                    </p>
+                  </span>
                 </Section>
 
                 <Section
@@ -171,7 +205,7 @@ const Home = () => {
                   <Cloud className="right" src={Cloud3} />
                   <Cloud className="right" src={Cloud2} />
                   <Cloud className="right moon" src={Moon} />
-                
+
                   <div className="faq-container">
                     <div className="preceptes-container">
                       {FAQData[language].map((faq, index) => (
@@ -206,7 +240,13 @@ const Home = () => {
                           );
                         }}
                       >
-                        <span className={`event-text ${inEventView ? "animate-text" : ""}`}>See facebook event</span>
+                        <span
+                          className={`event-text ${
+                            inEventView ? "animate-text" : ""
+                          }`}
+                        >
+                          See facebook event
+                        </span>
                       </button>
                     </div>
                   </InView>
@@ -260,20 +300,11 @@ const Home = () => {
                         );
                       }}
                     >
-                       {language === "fr"
+                      {language === "fr"
                         ? "Bénévoles navettes"
                         : "Shuttle volunteers"}
                     </button>
                   </div>
-                </Section>
-                <Section
-                  id="shuttles"
-                  title={TitleSectionData[language][2].title}
-                  center
-                >
-                  <SectionText text={waitingText} />
-                  <Cloud className="right" src={Cloud3} />
-                  <Cloud className="left" />
                 </Section>
                 <Section
                   id="artisticIntent"
