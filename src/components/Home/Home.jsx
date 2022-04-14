@@ -156,6 +156,7 @@ const Home = () => {
                   <Cloud className="right" />
                   <Cloud className="right" src={Cloud5} />
                   <Carousel />
+                  <span className="copyright-photo"><p>© Crédit photo : Valentin Duch, Romain Guédé, Kevin Soirat, Blanche Clément, Antoine Grenel</p></span>
                 </Section>
 
                 <Section
@@ -249,6 +250,7 @@ const Home = () => {
                         : "Volunteer's Manager"}
                     </button>
                     <button
+                      id="shuttle-button"
                       className="button"
                       onClick={(e) => {
                         e.preventDefault();

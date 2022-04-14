@@ -16,6 +16,7 @@
 //   transform: translateX(-5%);
 // }
 
+
 .button {
   pointer-events: auto;
   cursor: pointer;
@@ -42,13 +43,16 @@
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  width: 85%;
   &.many {
     .button {
       margin-right: 1rem;
       margin-bottom: 1rem;
     }
   }
+  
 }
+
 
 .event-container {
   height: 30vw;
@@ -171,3 +175,7 @@
   }
 }
 
+.copyright-photo {
+  margin-top: 2em;
+ 
+}
