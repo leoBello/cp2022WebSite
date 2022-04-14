@@ -31,7 +31,6 @@ const Footer = () => {
             className="logo-cp"
             src="https://i.postimg.cc/dQNGXKFn/logoCP.png"
             alt="logo-chateau-perche"
-            title="logo-chateau-perche"
           />
         </div>
         <div className="footer-item  text">

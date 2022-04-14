@@ -248,6 +248,20 @@ const Home = () => {
                         ? "Managers de bénévoles"
                         : "Volunteer's Manager"}
                     </button>
+                    <button
+                      className="button"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        window.open(
+                          "https://docs.google.com/forms/d/e/1FAIpQLSd4xOAQ3KThlDwZ2CgBE5msxopTsHc3RPTwzuivJ0CQmI68IQ/viewform",
+                          "_blank"
+                        );
+                      }}
+                    >
+                       {language === "fr"
+                        ? "Bénévoles navettes"
+                        : "Shuttle volunteers"}
+                    </button>
                   </div>
                 </Section>
                 <Section
