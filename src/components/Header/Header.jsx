@@ -9,7 +9,7 @@ const NavLink = (props) => {
   return (
     <div className="link-wrapper">
       <li>
-        <a className="link hover-1" href={props.url} {...props}>
+        <a className="link hover-1" title={`${props.children}`} href={props.url} {...props}>
           {props.children}
         </a>
       </li>
