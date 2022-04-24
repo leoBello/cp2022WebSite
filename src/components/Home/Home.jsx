@@ -91,20 +91,17 @@ const Home = () => {
   return (
     <div className="home">
       <Header showBackground={show} />
-      <Hero
-        title="Poésie Futur-Orient"
-        text="Château Perché Festival 2022"
-        showScrollDown={show}
-      />
       <section className="infos-section">
         <LanguageContext.Consumer>
           {({ language }) => {
-            const waitingText =
-              language === "fr"
-                ? "Patience chaton, ça arrive..."
-                : "Please wait, we are working on it...";
             return (
               <>
+                <Hero
+                  title="Poésie Futur-Orient"
+                  text="Château Perché Festival"
+                  date={`7 - 10 ${language === "fr" ? 'juillet' : 'july'} 2022`}
+                  showScrollDown={show}
+                />
                 <Section
                   id="preceptes"
                   title={TitleSectionData[language][0].title}
@@ -158,7 +155,7 @@ const Home = () => {
                   <Cloud className="left" src={Cloud5} />
                   <Cloud className="left" src={Cloud5} />
                   <Cloud className="left" />
-                  <Cloud className="left" src={Cloud3}/>
+                  <Cloud className="left" src={Cloud3} />
                   <Cloud className="right" />
                   <Cloud className="right" src={Cloud3} />
                   <Cloud className="right" src={Cloud2} />

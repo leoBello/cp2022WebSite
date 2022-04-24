@@ -27,6 +27,9 @@ const Hero = (props) => {
         <div className="hero-text">
           <h3>{props.text}</h3>
         </div>
+        <div className="hero-text">
+          <h3>{props.date}</h3>
+        </div>
         <div className="scroll-down-container">
           <div className="scroll-down"></div>
         </div>
